@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.data {
+    background: #ffffff;
+    height: 100vh;
+    margin-left: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.data h2{
+    text-align: center;
+    font-size: 35px;
+    color:#041230;
+
+    text-decoration: none;
+
+}
+
+
+
+
+/******************************
+        Side - Menu
+*******************************/
+.side-menu {
+    position: fixed;
+    background: #041230;
+    width: 300px;
+    height: 100%;
+    overflow: auto;
+    white-space: nowrap
+}
+
+.side-menu center img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+}
+
+.side-menu a {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu a:hover {
+    background: #1a294b;
+    padding-left: 20;
+}
+
+.side-menu span {
+    font-size: 20px;
+    margin-left: 10px;
+    color: white;
+}
+
+.side-menu i {
+    font-size: 20px;
+    margin-left: 20px;
+    color: white;
+}
+
+
+.social-links{
+    overflow: auto;
+    white-space: nowrap;
+    position: static;
+    bottom: 0;
+    padding: 15px;
+    margin-left: 0;
+    margin-top: 30px;
+}
+
+.social-links a {
+    display: inline;
+    line-height: 80px;
+}
+
+.social-links a:hover {
+    background: None;
+    position: inherit;
+    padding-left: 0;
+    color: black;
+}
+
+.social-links i:hover {
+    scale: 120%;
+    color: #fdfdfd;
+    transition: 0.3s;
+}
+
+.big-circle-init {
+    display: none;
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, #7ac5f8, #041230);
+    bottom: 70%;
+    right: 50%;
+    z-index: 3000;
+    scale: 80%;
+  
+  }
+  
+
+
+  
+  .big-circle-init img {
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-left: 10px;
+    border: 0px solid white;
+    
+  }
+  
+
+
+
+@media (max-width:1000px) {
+    .resume_wrapper .resume_right{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:850px) {
+
+  
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100px;
+        padding-top: None;
+        
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .social-links a i {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        margin-left: 25;
+        font-size: 25px;
+    }
+
+    .side-menu a:hover {
+        padding-left: 0;
+    }
+
+    .data {
+        margin-left: 110px;
+    }
+
+    .resume_wrapper .resume_right .resume_namerole{
+		display: none;
+	}
+
+	.resume_wrapper .resume_left .resume_namerole{
+		display: block;
+	}
+
+	.resume_wrapper{
+		width: 95%;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+
+	.resume_wrapper .resume_left,
+	.resume_wrapper .resume_right{
+		width: 100%;
+	}
+}
+
+
+
+@media (max-width:650px) {
+    
+    .side-menu {
+        width: 50px;
+    }
+    .data {
+        margin-left: 50px;
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    .social-links a i {
+        display: None;
+        line-height: 50px;
+        text-align: center;
+        margin-left: 25;
+        font-size: 25px;
+    }
+
+    .resume_wrapper .resume_right{
+		padding: 20px 30px;
+	}
+
+	.resume_wrapper .resume_right .resume_data{
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_right .resume_data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #0175b2;
+	}
+
+	.resume_wrapper .resume_right .resume_data .year:before,
+	.resume_wrapper .resume_right .resume_data .year:after{
+		display: none;
+	}
+
+	.resume_wrapper .resume_right .resume_data .content{
+		width: 100%;
+		padding: 0;
+	}
+
+	.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+		font-size: 24px;
+	}
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
+
+
+
+@media (max-height:780px) {
+    .side-menu center {
+        display: none;
+    }
+
+    .big-circle-init{
+        display: block;
+      }
+}
+
+
+
+

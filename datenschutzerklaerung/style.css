@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.data {
+    background: #ffffff;
+    height: 100vh;
+    margin-left: 340px;
+    margin-right: 340px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.data h2{
+    text-align: center;
+    font-size: 35px;
+    color:#041230;
+
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+@media (max-width:1000px) {
+    .resume_wrapper .resume_right{
+        width: 100%;
+    }
+}
+
+
+
+
+@media (max-width:850px) {
+
+  
+    .side-menu a span {
+        display: none;
+    }
+
+    .side-menu center {
+        display: none;
+    }
+
+    .side-menu {
+        width: 100px;
+        padding-top: None;
+        
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 35px;
+    }
+
+    .social-links a i {
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        margin-left: 25;
+        font-size: 25px;
+    }
+
+    .side-menu a:hover {
+        padding-left: 0;
+    }
+
+    .data {
+        margin-left: 110px;
+    }
+
+    .resume_wrapper .resume_right .resume_namerole{
+		display: none;
+	}
+
+	.resume_wrapper .resume_left .resume_namerole{
+		display: block;
+	}
+
+	.resume_wrapper{
+		width: 95%;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+
+	.resume_wrapper .resume_left,
+	.resume_wrapper .resume_right{
+		width: 100%;
+	}
+}
+
+
+
+@media (max-width:650px) {
+    
+    .side-menu {
+        width: 50px;
+    }
+    .data {
+        margin-left: 50px;
+    }
+
+    .side-menu a i {
+        display: block;
+        line-height: 80px;
+        text-align: center;
+        margin-left: 0;
+        font-size: 25px;
+    }
+
+    .social-links a i {
+        display: None;
+        line-height: 50px;
+        text-align: center;
+        margin-left: 25;
+        font-size: 25px;
+    }
+
+    .resume_wrapper .resume_right{
+		padding: 20px 30px;
+	}
+
+	.resume_wrapper .resume_right .resume_data{
+		flex-direction: column;
+	}
+	.resume_wrapper .resume_right .resume_data .year{
+		padding: 0;
+		margin-bottom: 5px;
+		width: 100%;
+		color: #0175b2;
+	}
+
+	.resume_wrapper .resume_right .resume_data .year:before,
+	.resume_wrapper .resume_right .resume_data .year:after{
+		display: none;
+	}
+
+	.resume_wrapper .resume_right .resume_data .content{
+		width: 100%;
+		padding: 0;
+	}
+
+	.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+		font-size: 24px;
+	}
+}
+
+#menu:checked~.side-menu {
+    left: 0;
+}
+
+
+
+@media (max-height:780px) {
+    .side-menu center {
+        display: none;
+    }
+
+    .big-circle-init{
+        display: block;
+      }
+}
+
+
+
+
